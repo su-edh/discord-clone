@@ -19,6 +19,7 @@ import {
     DropdownMenuSeparator, 
     DropdownMenuTrigger 
 } from "@/components/ui/dropdown-menu";
+import { useModal } from "@/hooks/use-modal-store";
 
 interface ServerHeaderProps {
     server: ServerWithMembersWithProfiles;
@@ -29,6 +30,7 @@ export const ServerHeader = ({
     server,
     role
 }: ServerHeaderProps) => {
+    const {onOpen} = useModal();
     const isAdmin = role === MemberRole.ADMIN;
     const isModerator = isAdmin || role === MemberRole.MODERATOR;
 
@@ -44,6 +46,7 @@ export const ServerHeader = ({
                 </button>
             </DropdownMenuTrigger>
             <DropdownMenuContent 
+                onClick={()=> onOpen("invite", { server })}
                 className="w-56 text-xs font-medium text-black dark:text-neutral-400 space-y-[2px]"
             >
                 {isModerator && (
