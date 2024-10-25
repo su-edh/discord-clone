@@ -1,4 +1,4 @@
-import { currentUser, redirectToSignIn } from "@clerk/nextjs/server";
+import { currentUser } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 
 import { db } from "@/lib/db";
@@ -8,7 +8,7 @@ export const initialProfile = async () => {
 
     if(!user) {
         redirect('/sign-in');
-        return;
+        return; 
         // return redirectToSignIn();
     }
 
