@@ -46,7 +46,6 @@ export const ServerHeader = ({
                 </button>
             </DropdownMenuTrigger>
             <DropdownMenuContent 
-                
                 className="w-56 text-xs font-medium text-black dark:text-neutral-400 space-y-[2px]"
             >
                 {isModerator && (
@@ -78,6 +77,7 @@ export const ServerHeader = ({
                 )}
                 {isModerator && (
                     <DropdownMenuItem
+                        onClick={()=> onOpen("createChannel")}
                         className="px-3 py-2 text-sm cursor-pointer"
                     >
                         Create Channel
@@ -103,7 +103,6 @@ export const ServerHeader = ({
                         <LogOut className="h-4 w-4 ml-auto"/>
                     </DropdownMenuItem>
                 )}
-
             </DropdownMenuContent>
         </DropdownMenu>
     )
