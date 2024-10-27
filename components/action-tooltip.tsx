@@ -6,7 +6,6 @@ import{
     TooltipProvider,
     TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { TooltipProviderProps } from "@radix-ui/react-tooltip";
 
 interface ActionTooltipProps {
     label: string;
