@@ -50,4 +50,4 @@ const ServerIdPage = async({
   return redirect(`/servers/${params.serverId}/channels/${initialChannel?.id}`);
 }
 
-export default ServerIdPage
+export default ServerIdPage;
