@@ -3,7 +3,6 @@ import { Member, Message, Profile } from "@prisma/client";
 import { useQueryClient } from "@tanstack/react-query";
 
 import { useSocket } from "@/components/providers/socket-provider";
-import { pages } from "next/dist/build/templates/app-page";
 
 type ChatSocketProps = {
     addKey: string;
