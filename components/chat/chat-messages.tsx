@@ -51,7 +51,6 @@ export const ChatMessage = ({
     const chatRef = useRef<ElementRef<"div">>(null);
     const bottomRef = useRef<ElementRef<"div">>(null);
 
-
     const {
         data,
         fetchNextPage,
