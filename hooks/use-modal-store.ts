@@ -8,7 +8,7 @@ interface ModalData{
     channel?: Channel;
     channelType?: ChannelType;
     apiUrl?: string;
-    query?: Record<string, any>;
+    query?: Record<string, unknown>;
 }
 
 interface ModalStore {
@@ -26,4 +26,3 @@ export const useModal = create<ModalStore>((set)=>({
     onOpen: (type,data = {}) => set({isOpen: true, type, data }),
     onClose: () => set({ type: null, isOpen: false}),
 }));
-
