@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 #### Experience it live
 ## click the Link below
-discord-clone-production-a645.up.railway.app
+[cloneDemo](https://discord-clone-production-a645.up.railway.app)
 
 ## Getting Started
 
